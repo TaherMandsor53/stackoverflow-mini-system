@@ -1,7 +1,7 @@
-.login-main {
+.login-register-main {
   background: hsl(210, 8%, 97.5%);
-  padding: 15vh;
-  .login-content {
+  padding: 10vh;
+  .login-register-content {
     background: #ffffff;
     width: 250px;
     margin: 0 auto;
@@ -22,9 +22,9 @@
       width: 230px;
       border-radius: 3px;
       border: 1px solid #1c1c1c;
-      font-size: 12px;
+      font-size: 16px;
     }
-    .login-btn {
+    .login-register-btn {
       width: 245px;
       height: 40px;
       background: hsl(206, 100%, 52%);
@@ -35,7 +35,7 @@
       cursor: pointer;
       margin-top: 15px;
     }
-    .login-btn:hover {
+    .login-register-btn:hover {
       background: hsl(206, 100%, 40%);
     }
   }
@@ -43,5 +43,40 @@
     text-align: center;
     width: 50px;
     height: 50px;
+  }
+  .signup-section {
+    margin-top: 15px;
+    .signup-text {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.ask-question-main {
+  @extend .login-register-main;
+
+  padding: 8vh 15vh 10vh 10vh;
+  .login-register-content {
+    width: 100%;
+    .email-input {
+      min-width: 810px;
+    }
+    .login-register-btn {
+      width: 150px;
+    }
+  }
+}
+
+.login-error-main {
+  background-color: hsl(47, 87%, 94%);
+  max-width: 640px;
+  width: 100%;
+  border: 1px solid hsl(47, 73%, 50%);
+  padding: 20px;
+  margin: 10px auto;
+  .signup-text {
+    color: blue;
+    cursor: pointer;
   }
 }
