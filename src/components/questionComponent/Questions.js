@@ -31,6 +31,14 @@ export default function Questions() {
     });
   };
 
+  const onTitleClick = useCallback(
+    id => {
+      navigate(`/questions/${id}`);
+      window.location.reload();
+    },
+    [navigate],
+  );
+
   const renderData = useCallback(() => {
     const sliceData = questionData?.slice(pageDetails?.offset, parseInt(pageDetails?.offset + pageDetails?.perPage));
     return (
@@ -51,14 +59,16 @@ export default function Questions() {
               </div>
             </div>
             <div className="question-section">
-              <div className="question-title">{item?.title}</div>
+              <div className="question-title" onClick={() => onTitleClick(item?.id)}>
+                {item?.title}
+              </div>
               <div dangerouslySetInnerHTML={{ __html: item?.description }} />
             </div>
           </div>
         );
       })
     );
-  }, [pageDetails, questionData]);
+  }, [onTitleClick, pageDetails?.offset, pageDetails?.perPage, questionData]);
 
   return (
     <div className="question-main">

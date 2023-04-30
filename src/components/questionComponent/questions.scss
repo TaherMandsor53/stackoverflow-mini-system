@@ -88,3 +88,24 @@
 .pagination > li:last-child > span {
   border-radius: unset;
 }
+.question-details-content {
+  display: flex;
+  width: 800px;
+  margin: 20vh auto;
+  gap: 20px;
+  justify-content: center;
+  .vote-answer-section {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    .up-down-icon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+  .question-section {
+    text-align: left;
+  }
+}

@@ -6,10 +6,10 @@ import LoginComp from './components/authentication/LoginComp';
 import RegistrationComp from './components/authentication/RegistrationComp';
 import AskQuestionComp from './components/askQuestion/AskQuestionComp';
 import LoginError from './components/authentication/LoginError';
+import QuestionsDetails from './components/questionComponent/QuestionsDetails';
 
 function App() {
   const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-  console.log({ loggedInUser });
   return (
     <div className="App">
       <BrowserRouter>
@@ -20,6 +20,7 @@ function App() {
           <Route path="/user-login-error" element={<LoginError />}></Route>
           <Route path="/registration" element={<RegistrationComp />}></Route>
           <Route path="/ask-questions" element={<AskQuestionComp />}></Route>
+          <Route path="/questions/:id" element={<QuestionsDetails />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
