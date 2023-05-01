@@ -1,16 +1,19 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import StackIcon from '../../assets/stackIcon.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function LoginComp() {
   const navigate = useNavigate();
   const data = JSON.parse(localStorage.getItem('userData'));
-  console.log({ data });
 
   const [userInfo, setUserInfo] = useState({
     email: '',
     password: '',
   });
+
+  useEffect(() => {
+    localStorage.removeItem('loggedInUser');
+  }, []);
 
   const onInputChange = useCallback(
     e => {
