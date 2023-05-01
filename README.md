@@ -20,4 +20,4 @@ ErrorHandling 404 : [http://localhost:3000/abc](http://localhost:3000/abc)<br/>
 
 ### Home Page
 
-![](/assets/AskQuestions.png)
+<img src='/assets/AskQuestions.png' width="600"/>
