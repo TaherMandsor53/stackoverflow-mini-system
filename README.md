@@ -1,6 +1,6 @@
 # Stackoverflow System
 
-Stack Overflow is a question and answer website for programmers. It is the flagship site of the Stack Exchange Network. 
+Stack Overflow is a question and answer website for programmers. It is the flagship site of the Stack Exchange Network.
 
 # Application local setup
 
@@ -18,4 +18,6 @@ Ask Questions : [http://localhost:3000/ask-questions](http://localhost:3000/ask-
 Questions Details : [http://localhost:3000/questions/:id](http://localhost:3000/questions/:id)
 ErrorHandling 404 : [http://localhost:3000/abc](http://localhost:3000/abc)
 
+### Home Page
 
+![alt text](https://github.com/TaherMandsor53/stackoverflow-mini-system/blob/main/src/assets/withoutLoginHome.png?raw=true)
