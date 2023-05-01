@@ -10,7 +10,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Application Routes
 
-Home : [http://localhost:3000](http://localhost:3000)
+Home : [http://localhost:3000](http://localhost:3000) \n
 Login : [http://localhost:3000/login](http://localhost:3000/login)
 Registration : [http://localhost:3000/registration](http://localhost:3000/registration)
 Login Error page : [http://localhost:3000/user-login-error](http://localhost:3000/user-login-error)
@@ -20,4 +20,4 @@ ErrorHandling 404 : [http://localhost:3000/abc](http://localhost:3000/abc)
 
 ### Home Page
 
-![alt text](https://github.com/TaherMandsor53/stackoverflow-mini-system/blob/main/src/assets/withoutLoginHome.png?raw=true)
+![Screenshot](https://github.com/TaherMandsor53/stackoverflow-mini-system/blob/main/src/assets/withoutLoginHome.png?raw=true)
