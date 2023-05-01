@@ -18,9 +18,14 @@ export default function QuestionHeader({ loggedInUser }) {
     navigate('/login');
     window.location.reload();
   };
+
+  const onLogoClick = () => {
+    navigate('/', { replace: true });
+  };
+
   return (
     <div className="question-header-main">
-      <img className="stackoverflow-logo" src={stackOverflowLogo} alt="stackoverflow-logo" />
+      <img className="stackoverflow-logo" src={stackOverflowLogo} alt="stackoverflow-logo" onClick={onLogoClick} />
       {loggedInUser?.displayName ? (
         <div className="user-details">
           <h5 className="user-text">{loggedInUser?.displayName}</h5>

@@ -1,6 +1,7 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
+import data from '../../data.json';
 
 export default function Questions() {
   const navigate = useNavigate();
@@ -10,6 +11,16 @@ export default function Questions() {
     perPage: 15,
     currentPage: 1,
   });
+  const [questionData, setQuestionData] = useState(undefined);
+
+  useEffect(() => {
+    const localData = JSON.parse(localStorage.getItem('questionDetails'));
+    if (localData && localData.length > 0) {
+      setQuestionData(localData);
+    } else {
+      setQuestionData(data);
+    }
+  }, []);
 
   const onAskBtnClick = () => {
     if (loggedInUser) {
@@ -18,7 +29,6 @@ export default function Questions() {
       navigate('/user-login-error');
     }
   };
-  const questionData = JSON.parse(localStorage.getItem('questionDetails'));
 
   const handlePageClick = e => {
     const selectedPage = e.selected;
