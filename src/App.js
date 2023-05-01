@@ -19,7 +19,7 @@ function App() {
     urlPath === '/' ||
     urlPath === '/user-login-error' ||
     urlPath === '/ask-questions' ||
-    urlPath === '/questions/:id'
+    urlPath.includes('/questions/')
   ) {
     isFlag = 1;
   }
