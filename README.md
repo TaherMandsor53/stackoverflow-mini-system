@@ -20,4 +20,4 @@ ErrorHandling 404 : [http://localhost:3000/abc](http://localhost:3000/abc)<br/>
 
 ### Home Page
 
-![image description](https://github.com/TaherMandsor53/stackoverflow-mini-system/blob/main/src/assets/withoutLoginHome.png?raw=true)
+![image description](https://github.com/TaherMandsor53/stackoverflow-mini-system/blob/main/src/assets/withoutLoginHome.png)
