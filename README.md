@@ -20,4 +20,4 @@ ErrorHandling 404 : [http://localhost:3000/abc](http://localhost:3000/abc)<br/>
 
 ### Home Page
 
-![AskQuestions.png](https://github.com/TaherMandsor53/stackoverflow-mini-system/blob/f8b7fef0e1940f0001b47499df60c93e1c002a09/src/assets/AskQuestions.png)
+![](/assets/AskQuestions.png)
