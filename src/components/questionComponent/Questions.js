@@ -90,7 +90,7 @@ export default function Questions() {
         containerClassName={'pagination'}
         subContainerClassName={'pages pagination'}
         activeClassName={'active'}
-        pageCount={Math.ceil(questionData.length / pageDetails.perPage)}
+        pageCount={Math.ceil(questionData?.length / pageDetails.perPage)}
       />
     </div>
   );
